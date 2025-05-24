@@ -21,6 +21,7 @@ import {
 } from "react-icons/si";
 import { DiDatabase } from "react-icons/di";
 import Navbar from "../components/Navbar";
+import { useEffect } from "react";
 
 const skills = [
   {
@@ -138,6 +139,9 @@ const itemVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
 };
 export default function TechStackPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Navbar />

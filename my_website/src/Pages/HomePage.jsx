@@ -95,7 +95,7 @@ export default function HomePage() {
       >
         <motion.h1
           variants={itemVariants}
-          className="mt-20 text-3xl font-bold text-gray-800 mb-10 flex items-center gap-2"
+          className="mt-20  px-4 pb-20 text-3xl font-bold text-gray-800 mb-10 flex items-center gap-2"
         >
           <HiOutlineMail className="text-indigo-300" />
           Contact Me
