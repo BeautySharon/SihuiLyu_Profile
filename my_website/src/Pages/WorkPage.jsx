@@ -38,8 +38,8 @@ export default function WorkPage() {
     <div className="min-h-screen bg-gray-100">
       <Navbar />
 
-      <div className="flex flex-col items-center pt-[140px] gap-6 text-center pb-20 px-4">
-        <h1 className="pt-20 text-4xl font-bold text-gray-800 mb-6">
+      <div className="flex flex-col items-center pt-24 gap-6 text-center pb-20 px-4">
+        <h1 className="pt-20 text-3xl font-bold text-gray-800 mb-6">
           💼 Professional Experience
         </h1>
         <p className="text-lg text-gray-600 text-center mb-12 whitespace-normal md:whitespace-nowrap">

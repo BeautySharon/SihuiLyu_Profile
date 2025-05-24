@@ -17,13 +17,13 @@ const fadeInUp = {
 export default function ProjectPage() {
   return (
     <motion.div
-      className="px-4 sm:px-6 lg:px-8 pt-[48px] pb-20 bg-gray-100 min-h-screen"
+      className="px-4 sm:px-6 lg:px-8 pt-24 pb-20 bg-gray-100 min-h-screen"
       initial="hidden"
       animate="visible"
       viewport={{ once: true, amount: 0.2 }}
       variants={fadeInUp}
     >
-      <div className="mt-40 flex items-center justify-center gap-2 mb-12 text-gray-700 hover:text-indigo-500 transition duration-300">
+      <div className="mt-24 flex items-center justify-center gap-2 mb-12 text-gray-700 hover:text-indigo-500 transition duration-300">
         <FaLaptopCode className="text-3xl" />
         <h1 className="text-3xl font-bold text-center">My Recent Projects:</h1>
       </div>

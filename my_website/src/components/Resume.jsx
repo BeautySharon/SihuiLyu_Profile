@@ -34,7 +34,7 @@ export default function Resume() {
     >
       <motion.div variants={fadeIn}>
         <div id="resume-anchor" className="anchor" />
-        <h2 className="mt-[120px] text-4xl font-bold text-gray-800 mb-4 tracking-tight flex items-center justify-center gap-2 hover:text-indigo-500 transition duration-300">
+        <h2 className="mt-24 text-3xl font-bold text-gray-800 mb-4 tracking-tight flex items-center justify-center gap-2 hover:text-indigo-500 transition duration-300">
           <MdOutlineInsertDriveFile className="text-5xl text-indigo-300" />
           Resume
         </h2>
@@ -53,7 +53,7 @@ export default function Resume() {
       >
         <iframe
           src={`${resume_sihuilyu}#toolbar=0`}
-          className="w-full h-screen border-none"
+          className="w-full h-124 sm:h-148 md:h-160 lg:h-[90vh] border-none"
           style={{ border: "none" }}
           title="Resume PDF"
         />

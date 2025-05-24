@@ -15,13 +15,13 @@ export default function BlackjackProjectPage() {
 
       <div className="w-full h-auto bg-cover bg-center bg-gray-100 bg-opacity-45 text-center flex flex-col justify-center items-center gap-5">
         {/* 项目标题 */}
-        <div className="mt-[120px] flex flex-col justify-center items-center gap-5 ">
+        <div className="mt-24 flex flex-col justify-center items-center gap-5 ">
           <div className="mt-20 flex flex-col justify-center items-center gap-5 ">
             {/* 🎈图标与标题同一行 */}
-            <h1 className="text-gray-700 text-3xl md:text-4xl font-bold drop-shadow-md">
+            <h1 className="text-gray-700 text-2xl md:text-2xl font-bold drop-shadow-md">
               ♠️ ACE (AI Card Expert)
             </h1>
-            <p className="text-gray-700 text-lg md:text-xl opacity-90 max-w-3xl lg:max-w-full whitespace-normal lg:whitespace-nowrap lg:overflow-hidden lg:text-ellipsis">
+            <p className="text-gray-700 text-lg md:text-lg opacity-90 max-w-3xl lg:max-w-full whitespace-normal lg:whitespace-nowrap lg:overflow-hidden lg:text-ellipsis">
               Java Blackjack project with reinforcement learning (Q-Learning),
               Swing GUI, and MVC architecture
             </p>

@@ -26,20 +26,17 @@ export default function ContactCard() {
 
   return (
     <motion.div
-      className="w-full rounded-lg p-8 mx-auto text-center"
+      className="w-full rounded-lg p-2 mx-auto text-center"
       initial="hidden"
       animate="visible"
       viewport={{ once: true, amount: 0.3 }}
       variants={containerVariants}
     >
-      <motion.p className="text-lg text-gray-600 mt-2" variants={fadeIn}>
+      <motion.p className="text-lg text-gray-600 p-2" variants={fadeIn}>
         Feel free to reach out via email or connect with me on LinkedIn &
         GitHub!
       </motion.p>
-      <motion.div
-        className="flex justify-center mt-6 space-x-6"
-        variants={fadeIn}
-      >
+      <motion.div className="flex justify-center space-x-6" variants={fadeIn}>
         <motion.a
           href="mailto:lyu.sihui96@gmail.com"
           target="_blank"

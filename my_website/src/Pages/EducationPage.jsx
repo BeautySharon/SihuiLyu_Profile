@@ -39,8 +39,8 @@ export default function EducationPage() {
     <div className="min-h-screen bg-gray-100">
       <Navbar />
 
-      <div className="pt-[140px] px-4 text-center pb-20">
-        <h1 className="pt-20 text-4xl font-bold text-gray-800 mb-6">
+      <div className="pt-24 px-4 text-center pb-20">
+        <h1 className="pt-20 text-3xl font-bold text-gray-800 mb-6">
           🎓 My Education
         </h1>
         <p className="text-lg text-gray-600 text-center mb-12 whitespace-normal md:whitespace-nowrap">

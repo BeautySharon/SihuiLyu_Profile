@@ -145,7 +145,7 @@ export default function TechStackPage() {
   return (
     <>
       <Navbar />
-      <section className="pt-[120px] min-h-screen bg-[#F5F6F8] px-6 py-20 flex flex-col items-center justify-center ">
+      <section className="pt-24 min-h-screen bg-[#F5F6F8] px-6 py-20 flex flex-col items-center justify-center ">
         <h2 className="mt-20 text-4xl font-bold text-black mb-12 hover:text-indigo-500 transition duration-300">
           Professional Skills :
         </h2>

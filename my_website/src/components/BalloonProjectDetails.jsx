@@ -16,12 +16,12 @@ export default function BalloonProjectDetails() {
       </div>
 
       {/* 标题 */}
-      <h1 className="text-2xl font-bold text-center mt-6">
+      <h1 className="text-xl font-bold text-center mt-6">
         Live Balloon Tracking & Airspace Safety System
       </h1>
 
       {/* 介绍文本 */}
-      <p className="text-lg text-left mt-4 px-6">
+      <p className="text-sm text-left mt-4 px-6">
         This project develops a real-time balloon tracking, trajectory
         prediction, and airspace safety monitoring system by integrating live
         data from multiple sources, including: Windborne Systems, OpenSky
@@ -31,7 +31,7 @@ export default function BalloonProjectDetails() {
       </p>
 
       {/* 详细功能列表 */}
-      <div className="text-lg text-left mt-4 px-8 space-y-4">
+      <div className="text-sm text-left mt-4 px-8 space-y-4">
         <ul className="list-disc space-y-3">
           <li>
             <strong>Real-Time Data Processing:</strong> Collects and processes
@@ -178,7 +178,7 @@ export default function BalloonProjectDetails() {
       </div>
 
       {/* Call to Action */}
-      <p className="text-2xl font-bold text-center mt-8">
+      <p className="text-lg font-bold text-center mt-8">
         Explore the web application live! Click the link below 👇
       </p>
 

@@ -62,7 +62,7 @@ export default function ContactForm() {
         className="w-full max-w-lg bg-white shadow-xl rounded-lg p-8 focus:ring-2 focus:ring-indigo-400"
         variants={fadeIn}
       >
-        <form className="flex flex-col gap-4 " onSubmit={handleSubmission}>
+        <form className="flex flex-col gap-4" onSubmit={handleSubmission}>
           <input
             type="text"
             name="from_name"

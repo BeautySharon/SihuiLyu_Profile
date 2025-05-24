@@ -5,9 +5,13 @@ import { FaGraduationCap, FaBriefcase } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import TechStackPage from "../Pages/TechStackPage";
+import { useRef } from "react";
 
-export default function Intro() {
+export default function IntroHome({ onSectionClick, contactRef }) {
   const navigate = useNavigate();
+  const scrollToIntro = () => {
+    contactRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -79,9 +83,8 @@ export default function Intro() {
           </li>
         </ul>
       </motion.div>
-
       <motion.div
-        className="w-full flex flex-col items-center justify-center"
+        className="w-full flex flex-col items-center justify-center min-h-10"
         variants={fadeIn}
       >
         <motion.button
@@ -90,27 +93,39 @@ export default function Intro() {
           onClick={() => navigate("/education")}
           className="w-full max-w-[1000px] flex justify-center items-center gap-2 text-xl font-bold text-gray-700 hover:text-indigo-500 transition duration-300"
         >
-          <FaGraduationCap className="text-3xl" />
-          <span> Education</span>
+          <FaGraduationCap className="text-2xl" />
+          <span>Education</span>
           <FiChevronRight size={20} />
         </motion.button>
       </motion.div>
-
       <motion.div
-        className="w-full flex flex-col items-center justify-center mb-20"
+        className="w-full flex flex-col items-center justify-center min-h-10 mb-20"
         variants={fadeIn}
       >
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.97 }}
           onClick={() => navigate("/work")}
-          className="w-full max-w-[1000px] flex justify-center items-center text-xl font-bold text-gray-700  gap-2 hover:text-indigo-500 transition duration-300"
+          className="w-full max-w-[1000px] flex justify-center items-center gap-2 text-xl font-bold text-gray-700 hover:text-indigo-500 transition duration-300"
         >
           <FaBriefcase className="text-xl" />
-          <span> Professional Experience</span>
+          <span>Professional Experience</span>
           <FiChevronRight size={20} />
         </motion.button>
-      </motion.div>
+      </motion.div>{" "}
+      <div className="w-full relative bg-gray-100 py-20 flex flex-col items-center gap-2">
+        <button
+          onClick={() =>
+            contactRef.current?.scrollIntoView({ behavior: "smooth" })
+          }
+          className="animate-bounce absolute bottom-[190px] left-1/2 transform -translate-x-1/2 text-[40px] font-bold bg-gradient-to-r
+          from-indigo-400 via-purple-400 to-pink-400 text-transparent bg-clip-text drop-shadow-md animate-bounce-slow
+          transition-all duration-500 ease-in-out hover:scale-125 hover:brightness-150 hover:drop-shadow-xl"
+          aria-label="Scroll to Contact"
+        >
+          ⌄
+        </button>
+      </div>
     </motion.div>
   );
 }

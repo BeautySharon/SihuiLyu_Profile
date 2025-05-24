@@ -14,14 +14,14 @@ export default function BalloonProjectPage() {
       <Navbar />
 
       <div
-        className="w-full h-auto bg-cover bg-center bg-gray-900 bg-opacity-45 text-black text-6xl text-center flex flex-col justify-center items-center gap-5"
+        className="w-full h-auto bg-cover bg-center bg-gray-900 bg-opacity-45 text-black text-center flex flex-col justify-center items-center gap-5"
         style={{ backgroundImage: `url(${balloon_bg})` }}
       >
         {/* 项目标题 */}
-        <div className="mt-[120px] flex flex-col justify-center items-center gap-5 ">
+        <div className="mt-24 flex flex-col justify-center items-center gap-5 ">
           <div className="mt-20 flex flex-col justify-center items-center gap-5 ">
             {/* 🎈图标与标题同一行 */}
-            <h1 className="text-3xl font-bold text-white">
+            <h1 className="text-2xl font-bold text-white">
               🎈 Balloon Trajectory Prediction System
             </h1>
           </div>

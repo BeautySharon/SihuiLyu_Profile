@@ -10,16 +10,8 @@ export default function BJProjectDetails() {
   const navigate = useNavigate();
 
   return (
-    <div className="w-2/3 h-auto bg-white text-black flex flex-col justify-center items-center p-6 mb-[50px]">
+    <div className="w-2/3 h-auto bg-white text-black flex flex-col justify-center items-center p-6 mb-12">
       {/* Screenshot */}
-      <p className="my-12 text-center">
-        <img
-          src={blackjack_demo}
-          alt="Project folder structure"
-          className="rounded-lg shadow-md mx-auto mt-4"
-        />
-        <p className="text-sm text-gray-500">Gameplay Interface Overview</p>
-      </p>
 
       {/* <img
         src={blackjack_demo}
@@ -30,7 +22,7 @@ export default function BJProjectDetails() {
       {/* Sections */}
       <div className="space-y-8 text-left">
         <section>
-          <h2 className="text-2xl font-bold mb-2"> Project Overview</h2>
+          <h2 className="text-xl font-bold mb-2"> Project Overview</h2>
           <p>
             Blackjack.ACE is a full-featured Java card game built using the MVC
             architecture. The game follows standard Blackjack rules, where a
@@ -50,16 +42,22 @@ export default function BJProjectDetails() {
         </section>
         <p className="my-12 text-center">
           <img
+            src={blackjack_demo}
+            alt="Project folder structure"
+            className="rounded-lg shadow-md mx-auto mt-4 w-96"
+          />
+          <p className="text-xs text-gray-500">Gameplay Interface Overview</p>
+        </p>
+        <p className="my-12 text-center">
+          <img
             src={main_menu}
             alt="Project folder structure"
             className="mx-auto rounded-lg shadow-md w-96"
           />
-          <p className="text-sm text-gray-500">Blackjack main menu</p>
+          <p className="text-xs text-gray-500">Blackjack main menu</p>
         </p>
         <section>
-          <h2 className="text-2xl font-bold mb-2">
-            AI Advisor with Q-Learning
-          </h2>
+          <h2 className="text-xl font-bold mb-2">AI Advisor with Q-Learning</h2>
           <p>
             Implemented a Q-learning agent that simulates thousands of games to
             generate a Q-table. During the game, the AI advisor recommends
@@ -73,7 +71,7 @@ export default function BJProjectDetails() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-bold mb-2">Object-Oriented Design</h2>
+          <h2 className="text-xl font-bold mb-2">Object-Oriented Design</h2>
 
           <p className="text-gray-700">
             This project strictly follows the MVC (Model-View-Controller)
@@ -93,7 +91,6 @@ export default function BJProjectDetails() {
               <code className="bg-gray-100 px-1 rounded">AIAdvisor</code>, and{" "}
               <code className="bg-gray-100 px-1 rounded">AudioPlayer</code>.
             </li>
-
             <li>
               <strong>View:</strong> Implements the graphical interface using
               Java Swing, rendering cards, buttons, game states, and user
@@ -105,7 +102,7 @@ export default function BJProjectDetails() {
               <code className="bg-gray-100 px-1 rounded">GamePanelBuilder</code>
               .
             </li>
-
+            m
             <li>
               <strong>Controller:</strong> Connects user inputs to game logic
               and view updates.
@@ -123,9 +120,9 @@ export default function BJProjectDetails() {
             <img
               src={structure_pic}
               alt="Project folder structure"
-              className="mx-auto rounded-lg shadow-md w-96"
+              className="mx-auto rounded-lg shadow-md w-60"
             />
-            <p className="text-sm text-gray-500 mt-2">
+            <p className="text-xs text-gray-500 mt-2">
               Project Folder Structure (MVC)
             </p>
           </p>
@@ -155,7 +152,7 @@ export default function BJProjectDetails() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-bold mb-2">Features</h2>
+          <h2 className="text-xl font-bold mb-2">Features</h2>
           <ul className="list-disc pl-6 space-y-1">
             <li>
               Two distinct modes: <strong>Training Mode</strong> for AI

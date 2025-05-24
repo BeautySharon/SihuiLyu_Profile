@@ -22,7 +22,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full bg-white bg-opacity-95 shadow-md z-[1000]">
       {/* Top bar */}
-      <div className="relative flex items-center justify-center h-[120px] px-4 md:px-10 ">
+      <div className="relative flex items-center justify-center h-24 px-4 md:px-10 ">
         {/* Mobile Hamburger Button - Left aligned */}
         <div className="absolute left-4 md:hidden">
           <button onClick={() => setIsOpen(!isOpen)}>
@@ -60,7 +60,7 @@ export default function Navbar() {
 
       {/* Mobile dropdown menu */}
       {isOpen && (
-        <div className="flex flex-col items-center space-y-6 py-6 md:hidden bg-white shadow-md overflow-y-auto max-h-[calc(100vh-120px)] px-4">
+        <div className="flex flex-col items-center space-y-6 py-6 md:hidden bg-white shadow-md overflow-y-auto max-h-[calc(100vh-36)] px-4">
           <NavbarElement Name="Home" Weblink="/" />
           <NavbarElement Name="About Me" Weblink="/aboutme" />
           <NavbarElement Name="Projects" Weblink="/projects" />

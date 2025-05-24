@@ -69,46 +69,33 @@ export default function HomePage() {
           />
         </motion.div>
       </motion.div>
-      {/* <div className="w-full relative bg-gray-100 py-20 flex flex-col items-center gap-4">
-        <button
-          onClick={() =>
-            contactRef.current?.scrollIntoView({ behavior: "smooth" })
-          }
-          className="animate-bounce absolute bottom-[190px] left-1/2 transform -translate-x-1/2 text-[40px] font-bold bg-gradient-to-r 
-          from-indigo-400 via-purple-400 to-pink-400 text-transparent bg-clip-text drop-shadow-md animate-bounce-slow 
-          transition-all duration-500 ease-in-out hover:scale-125 hover:brightness-150 hover:drop-shadow-xl"
-          aria-label="Scroll to Contact"
-        >
-          ⌄
-        </button>
-      </div> */}
-      <div className="bg-gray-100 flex flex-col items-center">
+      <div className="pt-24 bg-gray-100 flex flex-col items-center">
         <div className="h-1 w-11/12 rounded-full bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200  hover:brightness-350 hover:drop-shadow-xl duration-300" />
-      </div>
-      <motion.div
-        ref={contactRef}
-        className="pt-[120px] w-full h-screen bg-gray-100 flex flex-col justify-center items-center"
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-      >
-        <motion.h1
-          variants={itemVariants}
-          className="mt-20  px-4 pb-20 text-3xl font-bold text-gray-800 mb-10 flex items-center gap-2"
+        <motion.div
+          ref={contactRef}
+          className="pt-20 w-full min-h-screen bg-gray-100 flex flex-col justify-center items-center"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
         >
-          <HiOutlineMail className="text-indigo-300" />
-          Contact Me
-        </motion.h1>
+          <motion.h1
+            variants={itemVariants}
+            className="text-3xl font-bold text-gray-800 p-6 flex items-center gap-2"
+          >
+            <HiOutlineMail className="text-indigo-300" />
+            Contact Me
+          </motion.h1>
 
-        <motion.div variants={itemVariants} className="w-full max-w-xl">
-          <Contactform />
-        </motion.div>
+          <motion.div variants={itemVariants} className="w-full max-w-xl pb-4">
+            <Contactform />
+          </motion.div>
 
-        <motion.div variants={itemVariants}>
-          <ContactCard />
+          <motion.div variants={itemVariants}>
+            <ContactCard />
+          </motion.div>
         </motion.div>
-      </motion.div>
+      </div>
     </>
   );
 }

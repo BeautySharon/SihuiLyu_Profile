@@ -25,9 +25,9 @@ export default function ContactPage() {
       <Navbar />
 
       {/* ✅ 内容下移，避开 fixed 导航栏 */}
-      <main className="pt-48 px-4 pb-20 flex flex-col items-center">
+      <main className="pt-44 px-2 flex flex-col items-center gap-4">
         <motion.h1
-          className="text-3xl sm:text-4xl font-bold text-gray-800 mb-10 flex items-center gap-2 hover:text-indigo-500 transition duration-300"
+          className="py-auto text-3xl sm:text-3xl font-bold text-gray-800 flex items-center hover:text-indigo-500 transition duration-300 gap-2"
           variants={fadeIn}
           initial="hidden"
           animate="visible"
@@ -35,7 +35,6 @@ export default function ContactPage() {
           <HiOutlineMail className="text-indigo-300" />
           Contact Me
         </motion.h1>
-
         <Contactform />
         <ContactCard />
       </main>
