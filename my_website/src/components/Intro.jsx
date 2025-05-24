@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import profile from "../assets/images/profile.jpg";
+import profile from "../assets/Images/profile.jpg";
 import { FiChevronRight } from "react-icons/fi";
 import { FaGraduationCap, FaBriefcase } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
