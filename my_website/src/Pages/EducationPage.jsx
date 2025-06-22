@@ -79,7 +79,7 @@ export default function EducationPage() {
           >
             <EductionCard
               University="Case Western Reserve University"
-              Major="M.S. in Operations Research & Supply Chain Management  "
+              Major="M.S. in Operations Research & SCM"
               GraduationDate="Aug 2019 – Jan 2021"
               GPA="3.6"
               adaptiveText={true}

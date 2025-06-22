@@ -31,7 +31,7 @@ export default function Intro() {
       variants={fadeIn}
     >
       <motion.div
-        className="mt-20 my-auto flex flex-col items-center justify-center bg-white p-8 rounded-xl shadow-lg max-w-[900px] w-full mx-auto hover:-translate-y-1 transition-transform duration-300"
+        className="mt-20 flex flex-col items-center justify-center bg-white p-8 rounded-xl shadow-lg max-w-[900px] w-full mx-auto hover:-translate-y-1 transition-transform duration-300"
         variants={fadeIn}
       >
         <div className="flex justify-center mb-4">
@@ -81,7 +81,7 @@ export default function Intro() {
       </motion.div>
 
       <motion.div
-        className="w-full flex flex-col items-center justify-center"
+        className="mt-4 w-full flex flex-col items-center justify-center"
         variants={fadeIn}
       >
         <motion.button

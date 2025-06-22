@@ -164,8 +164,8 @@ export default function BJProjectDetails() {
               rendering
             </li>
             <li>
-              AI advisor powered by a pre-trained <strong>Q-stable</strong>{" "}
-              using Q-Learning
+              AI advisor powered by a pre-trained <strong>Q-table</strong> using
+              Q-Learning
             </li>
             <li>
               Visual comparison between Q-Learning heatmap and basic strategy
