@@ -82,7 +82,6 @@ export default function EducationPage() {
               Major="M.S. in Operations Research & SCM"
               GraduationDate="Aug 2019 – Jan 2021"
               GPA="3.6"
-              adaptiveText={true}
             />
           </motion.div>
 
