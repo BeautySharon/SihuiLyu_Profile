@@ -11,7 +11,9 @@ export default function ProjectCard({
   return (
     <Link
       to={link}
-      className="w-[400px] rounded-xl border border-gray-200 shadow-md hover:shadow-xl transition-transform duration-300 hover:-translate-y-1 overflow-hidden bg-white"
+      className="group block w-full max-w-sm sm:max-w-md lg:max-w-none 
+             rounded-2xl overflow-hidden border border-gray-200 bg-white shadow-md
+             transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg relative z-0 hover:z-10"
     >
       <div className="relative w-full h-48">
         <img

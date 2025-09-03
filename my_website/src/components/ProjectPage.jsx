@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import balloon_image from "../assets/Images/balloon_project.jpg";
 import blackjack_image from "../assets/Images/BalackJack.jpg";
+import pawtrust_image from "../assets/Images/pawtrust_home.png";
 import { FaLaptopCode } from "react-icons/fa";
 
 const fadeInUp = {
@@ -28,7 +29,14 @@ export default function ProjectPage() {
         <h1 className="text-3xl font-bold text-center">My Recent Projects:</h1>
       </div>
 
-      <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 place-items-center">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-10max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-10 justify-items-centermax-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 justify-items-center">
+        <ProjectCard
+          title="🐾 PawTrust 🐾"
+          subtitle="MERN stack web application connecting pet owners with sitters, featuring role-based dashboards, task management, calendar scheduling, and review system."
+          image={pawtrust_image}
+          tags={["React", "Node.js", "Express", "MongoDB", "Google Cloud"]}
+          link="/projects/pawtrust"
+        />
         <ProjectCard
           title="ACE (AI Card Expert)"
           subtitle="Java Blackjack project with reinforcement learning (Q-Learning), Swing GUI, and MVC architecture"

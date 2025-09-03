@@ -6,6 +6,7 @@ import ContactPage from "./Pages/ContactPage";
 import ResumePage from "./Pages/ResumePage";
 import BalloonProjectPage from "./Pages/BalloonProjectPage";
 import BlackjackProjectPage from "./Pages/BlackjackProjectPage";
+import PawtrustProejctPage from "./Pages/PawtrustProejctPage";
 import EducationPage from "./Pages/EducationPage";
 import WorkPage from "./Pages/WorkPage";
 import TechStackPage from "./Pages/TechStackPage";
@@ -30,6 +31,7 @@ const router = createBrowserRouter(
       <Route path="/skills" element={<TechStackPage />} />
       <Route path="/projects/balloon" element={<BalloonProjectPage />} />
       <Route path="/projects/blackjack" element={<BlackjackProjectPage />} />
+      <Route path="/projects/pawtrust" element={<PawtrustProejctPage />} />
     </>
   )
 );
