@@ -58,7 +58,7 @@ export default function WorkPage() {
             style={{ transformStyle: "preserve-3d" }}
           >
             <WorkCard
-              Position="Data Analyst"
+              Position="Data Engineer"
               Company="Bettaway"
               Duration="09/2021 - 05/2024"
             />
